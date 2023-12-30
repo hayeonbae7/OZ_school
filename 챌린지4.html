@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>회원가입</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form>
+        <fieldset>
+            <legend>필수 입력 사항</legend>
+            <ul>
+                <li>
+                    <lablel for="name">이름:</lablel>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <lablel for="id">아이디:</lablel>
+                    <input type="text" id="id" placeholder="6~20자사이 공백없이 입력">
+                </li>
+                <li>
+                    <lablel for="name">비밀번호:</lablel>
+                    <input type="text" id="name" placeholder="대소문자로 입력">
+                </li>
+                <li>
+                    <lablel for="email">이메일:</lablel>
+                    <input type="email" id="email">
+                </li>
+                <li>
+                    <lablel for="phone">휴대폰:</lablel>
+                    <input type="tel" id="phone">
+                </li>
+                <li>
+                    <label for="region">지역:</label>
+                    <select id="region">
+                        <option>서울</option>
+                        <option>경기도</option>
+                        <option>강원도</option>
+                        <option>충청도</option>
+                        <option>전라도</option>
+                        <option>경상도</option>
+                        <option>제주도</option>
+                    </select>
+                </li>
+                <li>
+                    <label>성별:</label>
+                    <input type="radio" id="m" name="gender">
+                    <label for="m">남</label>
+                    <input type="radio" id="w" name="gender">
+                    <label for="w">여</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>선택 입력 사항</legend>
+            <ul>
+                <li>취미</li>
+                <input type="checkbox" id="movie">
+                <label for="movie">영화</label>
+                <input type="checkbox" id="game">
+                <label for="game">게임</label>
+                <input type="checkbox" id="exercise">
+                <label for="exercise">운동</label>
+                <input type="checkbox" id="trevel">
+                <label for="trevel">여행</label>
+                <input type="checkbox" id="book">
+                <label for="book">독서</label>
+
+                <li>직업</li>
+                <input type="radio" id="student" name="job">
+                <label for="student">학생</label>
+                <input type="radio" id="worker" name="job">
+                <label for="w">직장인</label>
+                <input type="radio" id="homemaker" name="job">
+                <label for="homemaker">주부</label>
+                <input type="radio" id="freelancer" name="job">
+                <label for="freelancer">프리렌서</label>
+                <input type="radio" id="public" name="job">
+                <label for="public">공무원</label>
+                <input type="radio" id="jobless" name="job">
+                <label for="jobless">무직</label>
+            </ul>
+        </fieldset>
+        <br>
+        <button>가입하기</button>
+        <button>취소</button>
+    </form>
+    
+</body>
+</html>
