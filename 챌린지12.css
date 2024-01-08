@@ -1,0 +1,226 @@
+/* header */
+header.header{
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+.main-header{
+    width: 100%;
+    height: 4rem;
+    margin: auto;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.main-header-logo{
+    padding-left: 2rem;
+    font-size: 2.5rem;
+    color: gray;
+    font-weight: 800;
+}
+.hidden-logo{
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+.main-header_input{
+    justify-content: center;
+    align-items: center;
+}
+.main-header_input .icon input{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+.shop-intro, .b2b{
+    padding: 2rem 2.6rem;
+    font-size: 1.2rem;
+}
+.main-nav{
+    height: 5rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+.main-nav ul li{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.hidden-logo, .menu{
+    display: none;
+}
+@media screen and (max-width: 760px){
+    .hidden-logo, .menu{
+        display: block;
+    }
+    .main-nav, .main-header-logo, .mypage, .shop-intro, .b2b{
+        display: none;
+    }
+}
+/* info */
+.info_text{
+    width: 100%;
+    height: 50rem;
+    background-color: pink;
+    margin: auto;
+    padding: 12rem 3rem;
+}
+.info_text h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.info_text h1{
+    font-size: 4rem;
+}
+.info_text p{
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 760px){
+    .info_text{
+        width: 100%;
+        height: 40rem;
+        background-color: pink;
+        margin: auto;
+        padding: 5rem 1.3rem;
+    }
+    .info_text h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .info_text h1{
+        font-size: 2.3rem;
+    }
+    .info_text p{
+        font-size: 1rem;
+    }
+}
+/* banner */
+.banner1{
+    height: 15rem;
+    padding: 4rem;
+    margin: 3rem;
+    border-radius: 2rem;
+    background-color: rgb(253, 196, 149);
+}
+.banner2{
+    height: 15rem;
+    padding: 4rem;
+    margin: 3rem;
+    border-radius: 2rem;
+    background-color: rgb(207, 199, 191);
+}
+.full-btn{
+    width: 100%;
+    margin: auto;
+}
+.full-banner{
+    width: fit-content;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    padding-top: 0.7rem;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 3rem;
+}
+@media screen and (max-width: 760px){
+    .banner1, .banner2{
+        height: 20rem;
+        padding-top: 7rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        font-size: 0.65rem;
+    }
+}
+/* intro */
+.openshop-intro{
+    margin-top: 10rem;
+}
+.openshop-intro h1{
+    margin: 3rem;
+    margin-top: 3rem;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.openshop-intro ul{
+    height: 5rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+.openshop-intro ul li{
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: gray;
+}
+.openshop-intro ul li:nth-child(1){
+    color: black;
+    text-decoration: underline 3px;
+}
+.openshop-img{
+    height: 35rem;
+    background-color: #d0d0f7;
+}
+@media screen and (max-width: 760px){
+    .openshop-intro{
+        margin-top: 5rem;
+    }
+    .openshop-intro h1{
+        font-size: 2.2rem;
+        text-align: left;
+    }
+    .openshop-intro ul li{
+        font-size: 1.3rem;
+    }
+}
+/* footer */
+.footer{
+    height: 40rem;
+    height: auto;
+    background-color: rgb(236, 235, 235);
+    padding: 2rem;
+}
+#language{
+    width: 50%;
+    height: 3rem;
+    padding-left: 1.3rem;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: rgb(172, 171, 171);
+    font-size: 1.03rem;
+    font-weight: 600;
+}
+.sns ul{
+    width: 100%;
+}
+.sns ul li{
+    padding: 2rem;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+.footer-header{
+    padding-top: 2rem;
+    border-bottom: 1px solid rgb(84, 84, 84);
+}
+.option span:nth-child(n){
+    width: 40%;
+    padding: 1rem;
+}
+.footer_nav ul{
+    padding: 0;
+    width: 33%;
+}
+.footer_nav ul li{
+    width: auto;
+    padding: 1rem;
+    list-style-type: none;
+}
+@media screen and (min-width: 760px) {
+    #language{
+        width: auto;
+        border-style: none;
+    }
+}
+
