@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 소개 화면</title>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Diphylleia', monospace;
+            background-color: antiquewhite;
+            box-sizing: border-box;
+            
+        }
+        .content{
+            display: flex;
+        }
+        .content1{
+            width: 230px;
+            height: 270px;
+            background-color: rgb(243, 218, 74);
+            border-radius: 30px 0px 0px 30px;
+            text-align: center;
+            overflow: auto;
+        }
+        .content2{
+            width: calc(100% - 230px) ;
+            height: 270px;
+            background-color: white;
+            border-radius: 0px 30px 30px 0px;
+            padding-left: 30px;
+        }
+
+        .content1 p:nth-child(n+4){
+            color: green;
+        }
+        .content2 p:nth-child(n+3){
+            color: green;
+        }
+        
+        .content1 h2:nth-child(1){
+            margin-bottom: 0px;
+            margin-top: 10px;
+            font-size: 30px;
+        }
+        .content1 h2:nth-child(2){
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="content1">
+            <h2>😄</h2>
+            <h2>Fun Sidebar</h2>
+            <p>Enjoy your time here!</p>
+            <p>Play a Game</p>
+            <p>listen to Music</p>
+            <p>Watch a Movie</p>
+            <p>Watch a tv</p>
+            <p>read a book</p>
+            <p>listen to Music</p>
+        </div>
+        <div class="content2">
+            <h2>즐거운 초격차 교실!</h2>
+            <p>Welcome to the fun zone of OZ! Have a good time!</p>
+            <p>Tell a Joke</p>
+            <p>Drow something</p>
+            <p>Grab a Coffee</p>
+        </div>
+    </div>
+    
+</body>
+</html>
