@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>별트리 찍기</title>
+</head>
+<body>
+    <h1>별 트리 찍기</h1>
+
+    <script>
+        document.write("1번별<br>")
+        for(let i = 0; i < 5; i++){
+            for(let j = 0; j <= i; j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+        document.write("2번별<br>")
+        for(let i = 0; i < 5; i++){
+            for(let j = 0; j <= i; j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        for(let i = 0; i < 4; i++){
+            for(let j = 4; j > i; j--){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+        document.write("3번별<br>")
+        for(let i = 0; i < 5; i++){
+            for(let j = 4; j > i; j--){
+                document.write("&nbsp")
+            }
+            for(let j = 0; j <= i; j++){
+                document.write("*")
+            }
+            for(let j = 1; j <=i; j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        for(let i = 0; i < 4; i++){
+            for(let j = 0; j <= i; j++){
+                document.write("&nbsp")
+            }
+            for(let j = 4; j > i; j--){
+                document.write("*")
+            }
+            for(let j = 3; j > i; j--){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+
+
+
+    </script>
+</body>
+</html>
