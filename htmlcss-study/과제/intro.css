@@ -1,0 +1,34 @@
+.openshop-intro h1{
+    margin: 2rem;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.openshop-intro ul{
+    height: 5rem;
+    overflow: auto;
+    white-space: nowrap;
+}
+.openshop-intro ul li{
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: gray;
+}
+.openshop-intro ul li:nth-child(1){
+    color: black;
+    text-decoration: underline 3px;
+}
+.openshop-img{
+    height: 35rem;
+    background-color: #d0d0f7;
+}
+@media screen and (max-width: 760px){
+    .openshop-intro h1{
+        font-size: 2.2rem;
+        text-align: left;
+    }
+    .openshop-intro ul li{
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,139 @@
+<main>
+            <section>
+                <h2>마음속에 담아두었던</h2>
+                <h1>가전을 만나는<br>가장 좋은 기회</h1>
+                <p>#베스트샵 #상담예약 #최대 690만원</p>
+            </section>
+
+            <div class="banner">
+                <h1>선착순 한정 판매!<br>진열상품 기획전</h1>
+            </div>
+            <div class="banner">
+                <h1>BEST 매니저를 <br>소개합니다!</h1>
+            </div>
+            <div class="full-banner">이벤트 전체보기</div>
+            <nav class="openshop-intro">
+                <h1>오픈 매장 소개</h1>
+                <ul>
+                    <li>전체보기</li>
+                    <li>강남본점</li>
+                    <li>북대전점</li>
+                    <li>롯데 전주점</li>
+                    <li>홈플러스 의정부점</li>
+                    <li>홈플러스 야탑점</li>
+                    <li>양평점</li>
+                    <li>이도본점</li>
+                    <li>신세계 하남점</li>
+                    <li>서울양평220점</li>
+                    <li>롯데 부산점</li>
+                    <li>남수원본점</li>
+                    <li>광진본점</li>
+                    <li>홈플러스 성서점</li>
+                </ul>
+                <div class="openshop-img"></div>
+            </nav>
+        </main>
+        <footer>
+            <section class="footer-header">
+                <select name="language" id="">
+                    <option>한국/한국어</option>
+                    <option>Global/English</option>
+                    <span>유튜브</span>
+                    <span>인스타그램</span>
+                    <span>페이스북</span>
+                    <span>고객서비스 블로그</span>
+                    <span>고객서비스 유튜브</span>
+                    <span>Live LG</span>
+                </select>
+            </section>
+            <section class="footer-info">
+                <span>사이트맵</span>
+                <span>이벤트 개인정보처리방침</span>
+                <span>영상정보처리기기운영관리방침</span>
+                <span>이용약관</span>
+                <span>LG전자 임직원 등록</span>
+                <span>LG계열사 임직원 등록</span>
+                <span>복지몰 제휴사 임직원 등록</span>
+                <span>이메일 무단수집 거부</span>
+                <span>정도 경영 사이버 신문고</span>
+                <p>
+                    대표번호:<strong>02-3777-1114</strong> | LGE.COM 구매/비스 문의 (가전/소모품/구독): <strong>1544-7777</strong> | LG전자/LG계열사 임직원 구매 문의: <strong>1544-96665</strong>|복지몰 제휴사 구매 문의: <strong>1544-8777</strong>
+                </p>
+                <p>
+                    전화상담 시간은 평일 09:00~18:00 (주말, 공휴일 휴무)입니다. (통화요금:발신자부담) <br>
+                    제품 및 서비스 문의는 긴깁 문의 건에 한해 24시간 운영합니다.
+                </p>
+                <p>
+                    대표이사:조주완 사업자등록번호:107-86-14075 통신판매업신고번호:제1997-00084호 주소:서울시 영등포구 여의대로 1128 LG트윈타워
+                </p>
+            </section>
+        </footer>
+    </div>
+
+    .face{
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        
+    }
+    .eyes{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        top: 25px;
+    }
+    .eyes:nth-child(1){
+        left: 15px;
+    }
+    .eyes:nth-child(2){
+        right: 15px;
+    }
+    .lip{
+        width: 25px;
+        height: 15px;
+        border-radius: 0 0 40% 40%;
+        background-color: black;
+        top: 30px;
+        left: 25px;
+    }
+    .body{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    .arm1{
+        width: 5px;
+        height: 70px;
+        background-color: brown;
+        transform: rotate(-45deg);
+        left: -20px;
+        z-index: -2;
+    }
+    .arm2{
+        width: 5px;
+        height: 70px;
+        background-color: brown;
+        transform: rotate(45deg);
+        left: 132px;
+        bottom: 65px;
+        z-index: -2;
+    }
+    .btn{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        left: 35px;
+        margin: 15px;
+        z-index: 3;
+    }
+    .leg{
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+    }

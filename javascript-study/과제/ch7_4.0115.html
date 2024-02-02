@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미스테리 숫자 맞추기</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            height: 100%;
+            background-color: rgb(60, 59, 59);
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .text{
+            text-align: center;
+        }
+        .input-num{
+            display: flex;
+            justify-content: center;
+        }
+        input{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MISTERY Number 맞추기</h1>
+        <div class="input">
+            <p class="text">1부터 100사이의 숫자를 입력하세요</p>
+            <div class="input-num">
+                <input id="num" class="input">
+                <input type="button" onclick="submit()" value="입력" class="input-btn">  
+            </div>
+           
+        </div>
+    </div>
+    <script src="ch7_4.0115.js">
+
+    </script>
+</body>
+</html>

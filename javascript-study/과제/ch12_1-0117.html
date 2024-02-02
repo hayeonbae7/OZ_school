@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        h1{
+            text-align: center;
+        }
+        .screen{
+            width: 250px;
+            height: 50px;
+        }
+        .numscreen{
+            height: 50px;
+            padding: 10px;
+            margin: 0;
+            background-color: white;
+            text-align: end;
+            font-size: 30px;
+        }
+        .fullscreen{
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(127, 163, 255);
+            border-radius: 20px;
+            border: 3px solid gray;
+        }
+        button{
+            width: 55px;
+            height: 25px;
+            margin: 5px 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click MyCalculator</h1>
+    <div class="fullscreen">
+        <div class="screen">
+            <p class="numscreen"></p>
+        </div>
+        <div class="buttons">
+            <div class="btn1">
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+                <button class="operator">x</button>
+            </div>
+            <div class="btn2">
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button>
+                <button class="operator">/</button>
+            </div>
+            <div class="btn3">
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button>
+                <button class="operator">-</button>
+            </div>
+            <div class="btn4">
+                <button class="clear">c</button>
+                <button class="num">0</button>
+                <button class="operator">+</button>
+                <button class="result">=</button>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <script>
+        const p = document.querySelector(".numscreen");
+        const operators = document.querySelector(".operator");
+        const input = document.querySelector(".numscreen");
+        const num = document.querySelector(".num");
+
+        let operatoron = ''; //연산자 입력
+        let previousnum = ''; //이전값
+        let resentnum = ''; //최근값
+
+        let Calculate = (n1, operator, n2)
+
+
+
+
+        //clear
+        document.querySelector(".clear").addEventListener("click", function(){
+            p.textContent = "";
+        })
+
+    </script>
+
+</body>
+</html>

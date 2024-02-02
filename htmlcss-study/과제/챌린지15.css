@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 100px 0 120px 0;
+    background-color: rgb(105, 105, 254);
+}
+/* chat-screen_bar */
+.chat-screen_bar{
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    display: block;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.user{
+    display: flex;
+}
+.user-img{
+    width: 65px;
+    height: 65px;
+    border-radius: 20%;
+    background-color: rgb(105, 105, 254);
+}
+.user-column2{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.user-nick{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.user-count{
+    color: gray;
+}
+/* screen */
+.chat-screen-text{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.chat-text{
+    width: 40%;
+    height: 70px;
+    line-height: 40px;
+    margin: 10px 25px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: white;
+    list-style-type: none;
+    justify-content: left;
+    position: relative;
+}
+.chat-text2{
+    width: 40%;
+    height: 70px;
+    line-height: 40px;
+    margin: 10px 25px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: white;
+    list-style-type: none;
+    align-self: flex-end;
+    position: relative;
+}
+/* text-input */
+.chat-form{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+
+}
+.chat-form_field{
+    display: flex;
+}
+.chat-form_msg{
+    width: calc(100% - 120px);
+    height: 120px;
+    border: none;
+    resize: none;
+    font-size: 24px;
+    padding: 10px;
+}
+.chat-form_btn{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: rgb(105, 105, 254);
+    background-color: rgb(105, 105, 254);
+}
+.chat-screen-text > .chat-text::after{
+    content: "";
+    border-right: 16px solid white;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+.chat-screen-text > .chat-text2::after{
+    content: "";
+    border-left: 16px solid white;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 10px;
+    right: -10px;
+}
+.chat-text:hover, .chat-text2:hover{
+    background-color: antiquewhite;
+    transition: background-color 1s 200ms ease-in;
+}
+.chat-text:hover::after{
+    border-right: 16px solid antiquewhite;
+    transition: border-right 1s 200ms ease-in;
+}
+.chat-text2:hover::after{
+    border-left: 16px solid antiquewhite;
+    transition: border-left 1s 200ms ease-in;
+}

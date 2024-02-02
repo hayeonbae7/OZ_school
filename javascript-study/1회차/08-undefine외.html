@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>undefine 외</title>
+</head>
+<body>
+    
+    <script>
+        let name;
+
+        console.log(name)
+
+        name = '배하연'
+        console.log(name)
+
+        //null은 없는 값을 지정(undefine이 아님)
+        name = null
+        console.log(name)
+
+        //입력을 하지 않고 확인을 누르면 빈칸이 반환
+        //취소를 누르면 반환이 되지 않아서 null
+        console.log(prompt("입력테스트"))
+
+        let answer = confirm("기분이 좋은가요?")
+        console.log(`기분이 좋은 가요? ${answer}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사 클래스 & 의사 요소</title>
+    <style>
+        .menu{
+            padding: 10px;
+            border-bottom: 1px solid black;
+        }
+
+        .menu > li{
+            display: inline-block;
+            text-align: center;
+        }
+        li > a{
+            display: inline-block;
+            width: 80px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        /*의사 클래스(특정상태 선택)*/
+        a:hover{
+            color: while;
+            background-color: gray;
+        }
+
+        a:active{
+            color: white;
+            background-color: black;
+        }
+
+        /*2n번째 형제만(n은 자연수, 해당하는 모든 숫자에 적용)*/
+        li:nth-child(2n){
+            font-size: 20px;
+        }
+
+        /*
+        의사 요소(일부분 선택)
+        after: 뒤에 콘텐츠 추가
+        before: 앞에 콘텐츠 추가
+        */
+        a::after{
+            content: "보기";
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <!--넣을 링크가 없어서 임시로 # 넣기-->
+        <li><a href="#">사전</a></li>
+        <li><a href="#">뉴스</a></li>
+        <li><a href="#">증권</a></li>
+        <li><a href="#">지도</a></li>
+    </ul>
+</body>
+</html>

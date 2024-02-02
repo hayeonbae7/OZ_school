@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 더 알아보기</title>
+    <style>
+        /*
+        기호와 함께 사용하는 속성 선택자
+        * : 값의 포함 여부
+        ^ : 값의 시작 여부
+        $ : 값의 끝 여부
+        */
+        [src *= image]{
+            border: 5px dashed red;
+        }
+
+        /*하위요소 선택하기(안에 포함되어 있기만 하면 가능)*/
+        body em{
+            color: blue;
+        }
+
+        /*자식요소 선택하기()*/
+        p > em{
+            color: purple;
+        }
+
+        /*형제요소(바로 뒤의 형제)*/
+        #sam + p{
+            color: orange;
+        }
+
+        /*전체형제(모든 형제), 형제선택자는 앞은 적용 안되고 뒤에 형제만 가능*/
+        #sam ~ p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <img src="image/dragon.webp" alt="용용">
+    <img src="image/dragon.webp">
+    <img src="image/dragon.webp" id="sam">
+    <p>올해는 갑진년으로 청룡의 해이다.</p>
+    <p>청룡은 한자 문화관의 상상의 동물로</p>
+    <p>파란색 또는 <em>초록색</em>을 띤 용을 의미한다.</p>
+    <p>청룡은 용기와 도전을 상징한고 자유와 창의성을 상징한다.</p>
+</body>
+</html>

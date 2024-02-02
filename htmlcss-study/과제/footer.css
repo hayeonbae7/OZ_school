@@ -1,0 +1,48 @@
+.footer{
+    height: 40rem;
+    height: auto;
+    background-color: rgb(236, 235, 235);
+    padding: 2rem;
+}
+#language{
+    width: 50%;
+    height: 3rem;
+    padding-left: 1.3rem;
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: rgb(172, 171, 171);
+    font-size: 1.03rem;
+    font-weight: 600;
+}
+.sns ul{
+    width: 100%;
+}
+.sns ul li{
+    padding: 2rem;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+.footer-header{
+    padding-top: 2rem;
+    border-bottom: 1px solid rgb(84, 84, 84);
+}
+.option span:nth-child(n){
+    width: 40%;
+    padding: 1rem;
+}
+.footer_nav ul{
+    padding: 0;
+    width: 33%;
+}
+.footer_nav ul li{
+    width: auto;
+    padding: 1rem;
+    list-style-type: none;
+}
+@media screen and (min-width: 760px) {
+    #language{
+        width: auto;
+        border-style: none;
+    }
+}

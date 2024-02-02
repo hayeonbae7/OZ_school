@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement & appendChild</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        const div = document.getElementById("container")
+
+        const box = document.createElement("div")
+        console.log(box)
+
+
+        box.style.color = "blue"
+        box.style.width = "200px"
+        box.style.height = "200px"
+        box.textContent = "funny"
+
+        //html 태그만 추가 가능
+        //추가한 내용을 반환도 함
+        div.appendChild(box)
+
+        //단순 텍스트도 추가 가능
+        div.append("append text")
+
+        //for문 활용
+        for(let i = 0; i < 5; i++){
+            const div = document.getElementById("container")
+            const box = document.createElement("div")
+            console.log(box)
+
+            box.style.color = "blue"
+            box.style.width = "50px"
+            box.style.height = "50px"
+            box.textContent = "funny"
+
+            div.appendChild(box)
+            }
+    </script>
+</body>
+</html>

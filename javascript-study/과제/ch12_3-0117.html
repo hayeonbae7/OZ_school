@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>today date</title>
+</head>
+<body>
+
+    <p id="time"></p>
+    <script>
+        const Week = ["Sun", "Mon", "Tue", "Wen", "Thur", "Fri", "Sat"]
+        const Month = ["Jan", "Feb", "Mar", "Apr", "May", "jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        let timeId;
+
+        timeId = setInterval(function(){
+            const p = document.getElementById("time");
+            const now = new Date();
+
+            let year = now.getFullYear();
+            let month = now.getMonth();
+            let day = now.getDate();
+            let week = now.getDay();
+            let hour = now.getHours();
+            let min = now.getMinutes();
+            let sec = now.getSeconds();
+
+            p.textContent = `현재시간: ${Week[week]} ${Month[month]} ${day} ${year} ${hour}:${min}:${sec} GMT+0900 (한국표준시)`
+        }, 1000)
+    </script>
+</body>
+</html>

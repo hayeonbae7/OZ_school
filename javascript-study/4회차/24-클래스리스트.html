@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클래스 리스트</title>
+    <style>
+        .pretty{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="jjangju.webp" alt="jjanggu">
+    <br>
+    <button id="add">add style</button>
+    <button id="remove">remove style</button>
+    <button id="toggle">toggle style</button>
+
+    <script>
+        const img = document.querySelector("img")
+        const addBtn = document.querySelector("#add")
+        const removeBtn = document.querySelector("#remove")
+        const toggleBtn = document.querySelector("#toggle")
+
+        console.log(img.classList)
+
+        addBtn.addEventListener("click", function(){
+            img.classList.add("pretty")
+        })
+
+        removeBtn.addEventListener("click", function(){
+            img.classList.remove("pretty")
+        })
+        
+        toggleBtn.addEventListener("click", function(){
+            img.classList.toggle("pretty")
+        })
+    </script>
+</body>
+</html>

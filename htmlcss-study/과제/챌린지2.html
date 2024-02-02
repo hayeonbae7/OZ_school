@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>양식을 만들고 입력 정보를 보내자</title>
+</head>
+<body>
+    <header>
+        <h1>ott 설문조사 양식</h1>
+        <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text" id="name">
+                <br>
+                <label for="email">이메일주소</label>
+                <input type="email" id="email">
+            </fieldset>
+            <fieldset>
+                <legend>설문</legend>
+                    <p>연령대를 선택하시오.</p>
+                    <input type="radio" id="teen" name="age">
+                    <label for="teen">10대</label>
+                    <input type="radio" id="twenty" name="age">
+                    <label for="twenty">20대</label>
+                    <input type="radio" id="thirty" name="age">
+                    <label for="thirty">30대</label>
+                    <input type="radio" id="fourty" name="age">
+                    <label for="fourty">40대</label>
+                    <input type="radio" id="fifty" name="age">
+                    <label for="fifty">50대</label>
+                    <input type="radio" id="other" name="age">
+                    <label for="other">그외</label>
+
+                    <p>좋아하는 장르를 <strong>모두</strong> 고르시오.</p>
+                    <input type="checkbox" id="romance">
+                    <label for="romance">로맨스</label>
+                    <input type="checkbox" id="comic">
+                    <label for="comic">코미디</label>
+                    <input type="checkbox" id="action">
+                    <label for="action">액션</label>
+                    <input type="checkbox" id="fantasy">
+                    <label for="fantasy">판타지</label>
+                    <input type="checkbox" id="thriller">
+                    <label for="thriller">스릴러</label>
+                    
+                    <p><strong>가장</strong> 즐겨 찾는 ott를 고르시오.</p>
+                    <select>
+                        <option>넷플릭스</option>
+                        <option>티빙</option>
+                        <option>디즈니플러스</option>
+                        <optiㄴon>쿠팡플레이</option>
+                        <option>웨이브</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <legend>기타의견</legend>
+                <p>ott에 관한 다양한 의견을 작성하시오.</p>
+                <textarea rows="5" cols="30"></textarea>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </main>
+
+    <hr>
+    <footer>
+        <p>설문 작성하시느라 수고하셨습니다.</p>
+    </footer>
+</body>
+</html>

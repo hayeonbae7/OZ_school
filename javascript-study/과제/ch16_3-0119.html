@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이스크림 나열</title>
+</head>
+<body>
+    <div id="btns">
+        <button id="ice-append">아이스크림 추가</button>
+        <button id="ice-alert">아이스크림 출력</button>
+        <button id="ice-list-alert">아이스크림 목록 출력</button>
+    </div>
+    <div id="list">
+        <h1>입력한 아이스크림 목록:</h1>
+        <p id="ice-list"></p>
+    </div>
+
+    <script>
+        const iceAddbtn = document.getElementById("ice-append");
+        const iceAlertbtn = document.getElementById("ice-alert");
+        const iceListbtn = document.getElementById("ice-list-alert");
+        const p = document.getElementById("ice-list");
+        
+        let iceList =[];
+
+        iceAddbtn.addEventListener("click", function(){
+            const icename = window.prompt("추가하고 싶은 아이스크림 이름을 적어주세요.")
+            iceList.push(icename);
+        })
+        
+
+        iceAlertbtn.addEventListener("click", function(){
+            iceList.forEach(function(item){
+                alert(item)
+            })
+        })
+
+        iceListbtn.addEventListener("click", function(){
+            p.textContent=`${iceList}`
+        })
+
+    </script>
+</body>
+</html>

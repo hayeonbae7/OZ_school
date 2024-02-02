@@ -1,0 +1,124 @@
+/*전체적인 세팅*/
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Diphylleia', monospace;
+    height: 100%;
+    margin: 0px;
+}
+.container{
+    height: 100%;
+    background-color: mediumslateblue;
+}
+
+/*스크린 크기 조정*/
+.chat-screen{
+    /*띄어쓰기 잘해주기*/
+    height: calc(100% - 120px);
+}
+
+/*유저 정보 표시되는 부분*/
+.user{
+    background-color: white;
+    padding: 16px;
+    height: 80px;
+}
+
+.user_column{
+    float: left;
+}
+
+.user_pic{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-image: url(./dragon.webp);
+    background-size: 50px 50px;
+}
+.user_nick, .user_count{
+    margin: 5px;
+}
+
+.user_count{
+    font-size: 12px;
+    color: gray;
+}
+
+/*채팅 입력창*/
+.chat-form{
+    height: 120px;
+    background-color: white;
+}
+
+.chat-form_field{
+    height: 120px;
+}
+
+.chat-form_msg{
+    float: left;
+    width: calc(100% - 120px);
+    height: 120px;
+    border: none;
+    resize: none;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.chat-form_btn{
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: mediumslateblue;
+    font-size: 18px;
+}
+
+.chat-form:focus{
+    outline: none;
+}
+
+.chat-form_btn:active{
+    background-color: rgb(108, 85, 239);
+}
+
+/* text.css */
+.chat-screen_texts{
+    padding: 0;
+    list-style-type: none;
+}
+
+.chat-screen_texts > .text{
+    background-color: azure;
+    width: 280px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position: relative;
+    left: 20px;
+}
+
+.chat-screen_texts > .text::after{
+    content: "";
+    border-right: 16px solid azure;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.chat-screen_texts > .text:hover{
+    background-color: rgb(121, 221, 221);
+    transition: background-color 1500ms 200ms ease-in;
+}
+/* hove까지도 선택자이므로 뒤에 의사요소 추가 가능 */
+.chat-screen_texts > .text:hover::after{
+    border-right: 16px solid rgb(121, 221, 221);
+    transition: border-right 1500ms 200ms ease-in;
+}

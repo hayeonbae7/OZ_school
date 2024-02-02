@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교 연산</title>
+</head>
+<body>
+    
+    <script>
+        //prompt는 문자열로 값을 반환
+        let age = prompt("당신의 나이는?")
+
+        //문자열로 표현된 숫자를 숫자형으로 변환
+        let intage = window.parseInt(prompt("당신의 나이는?"))
+
+        //값이 같아도 형식이 다르면 false
+        console.log(age === intage)
+
+        let name = prompt("name")
+        //html이 아니라 dom 단계에서 내용 추가
+        document.write(`사용자의 이름은 ${name}<br>`)
+        document.write(`우리가 찾던 사람인가? ${"배하연" === name}`)
+    </script>
+</body>
+</html>

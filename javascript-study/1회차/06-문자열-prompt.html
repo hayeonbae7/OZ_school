@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 & window.prompt()</title>
+</head>
+<body>
+    
+
+    <script>
+        let apple;
+        apple = "사과"
+
+        console.log(apple)
+        console.log("사과")
+
+        let banana = '바나나'
+
+        console.log(apple + '&' + banana)
+
+        //경고창이 아니라 입력창
+        //입력창에 입력하면 그 값이 사라지지 않고 반환된다.
+        //취소를 누르면 반환되지 않음
+        let answer = window.prompt("당신이 좋아하는 과일은?")
+        alert(answer)
+    </script>
+
+</body>
+</html>

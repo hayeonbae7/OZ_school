@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경을 깔아보자</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            border: 20px double green;
+
+            /*background-color: bisque;*/
+            background-clip: border-box;
+            background-image: url(image/dragon.webp);
+            background-size: 200px 200px;
+            /*
+            repeat-x: 가로로 반복
+            repeat-y: 세로로 반복
+            */
+            background-repeat: no-repeat;
+            /*padding-box border-box */
+            background-origin: content-box;
+            /*top bottom left right*/
+            background-position: left center;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

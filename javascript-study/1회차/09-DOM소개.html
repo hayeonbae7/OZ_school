@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 소개</title>
+</head>
+<body>
+    <!-- dom은 html 자체가 아니라는 것 이해하기 -->
+    <p>대한민국의 역습입니다.</p>
+    <p class="comment">손흥민 몰고 갑니다. 크로스</p>
+    <p class="comment" id="goal">조규성의 환상적인 마무리 골</p>
+
+    <script>
+        //window(브라우저)가 가지고 있는 
+        //document(문서, dom)라는 하위 속성을 선택하고
+        //querySelector라는 기능을 선택
+        const p1 = window.document.querySelector('p')
+        const p2 = window.document.querySelector(".comment")
+        const p3 = window.document.querySelector("#goal")
+
+        console.log(p1.textContent)
+        console.log(p2.textContent)
+        console.log(p3.textContent)
+
+        p1.textContent = "우루과이의 역습입니다."
+        p2.textContent = "수아레즈의 멋진 패스."
+        p3.textContent = "포를린의 논스톱 슛."
+    </script>
+</body>
+</html>

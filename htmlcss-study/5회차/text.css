@@ -1,0 +1,35 @@
+.chat-screen_texts{
+    padding: 0;
+    list-style-type: none;
+}
+
+.chat-screen_texts > .text{
+    background-color: azure;
+    width: 280px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position: relative;
+    left: 20px;
+}
+
+.chat-screen_texts > .text::after{
+    content: "";
+    border-right: 16px solid azure;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.chat-screen_texts > .text:hover{
+    background-color: rgb(121, 221, 221);
+    transition: background-color 1500ms 200ms ease-in;
+}
+/* hove까지도 선택자이므로 뒤에 의사요소 추가 가능 */
+.chat-screen_texts > .text:hover::after{
+    border-right: 16px solid rgb(121, 221, 221);
+    transition: border-right 1500ms 200ms ease-in;
+}
